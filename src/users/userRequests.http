@@ -1,0 +1,41 @@
+### Signup
+POST http://localhost:3000/auth/signup
+content-type:application/json
+
+{
+    "email":"test@test.com",
+    "password":"sayed2"
+}
+
+### Signin
+POST http://localhost:3000/auth/signin
+content-type:application/json
+
+{
+    "email":"test@test.com",
+    "password":"sayed2"
+}
+
+### Signout
+POST http://localhost:3000/auth/signout
+
+### Who Am I
+GET http://localhost:3000/auth/whoami
+
+### Get One User
+GET http://localhost:3000/auth/2
+
+### Get Some Users
+GET http://localhost:3000/auth?email=aaa@fff.com
+
+### Delete One User
+DELETE  http://localhost:3000/auth/2
+
+### Update User
+PATCH  http://localhost:3000/auth/2
+content-type:application/json
+
+{
+    "email":"bbb@fff.com"
+}
+
